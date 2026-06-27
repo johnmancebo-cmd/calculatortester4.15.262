@@ -9,6 +9,7 @@ import {
   HandHeart,
   UserPlus,
   Mail,
+  FileText,
 } from "lucide-react";
 import { Hero } from "@/components/Hero";
 import { SectionHeading } from "@/components/SectionHeading";
@@ -185,8 +186,49 @@ export default function AwardsDinnerPage() {
         </div>
       </section>
 
-      {/* Honorees */}
+      {/* Why attend */}
       <section className="bg-offWhite py-20">
+        <div className="container-content">
+          <SectionHeading
+            eyebrow="Why Attend"
+            title="An evening worth your seat at the table"
+            intro="Whether you're an executive, a sponsor's guest, or early in your career, the dinner is built for genuine connection."
+          />
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              {
+                title: "Celebrate leaders",
+                body: "Recognize the people and organizations advancing diversity and inclusion across insurance.",
+              },
+              {
+                title: "Connect with peers",
+                body: "Meet executives, brokers, attorneys, claims and risk professionals in one room.",
+              },
+              {
+                title: "Champion inclusion",
+                body: "Stand with a community committed to a more representative industry.",
+              },
+              {
+                title: "Support the mission",
+                body: "Your attendance helps sustain the Club's year-round programming and mentorship.",
+              },
+            ].map((item) => (
+              <div
+                key={item.title}
+                className="rounded-xl bg-white p-6 shadow-card ring-1 ring-navy/5"
+              >
+                <h3 className="text-lg font-semibold text-navy">{item.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-charcoal/70">
+                  {item.body}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Honorees */}
+      <section className="bg-white py-20">
         <div className="container-content">
           <SectionHeading
             eyebrow="This Year's Honorees"
@@ -203,7 +245,7 @@ export default function AwardsDinnerPage() {
       </section>
 
       {/* Award categories */}
-      <section className="bg-white py-20">
+      <section className="bg-offWhite py-20">
         <div className="container-content">
           <SectionHeading
             eyebrow="Recognition"
@@ -280,13 +322,23 @@ export default function AwardsDinnerPage() {
                 <SponsorTierCard key={tier.name} tier={tier} />
               ))}
           </div>
-          <div className="mt-8 text-center">
+          <div className="mt-8 flex flex-wrap justify-center gap-3">
             <Link
               href="/sponsors#inquiry"
               className="inline-flex items-center gap-2 rounded-md bg-navy px-6 py-3 text-sm font-semibold text-offWhite transition-colors hover:bg-deepBlue"
             >
               <HandHeart size={16} /> Inquire about sponsorship
             </Link>
+            <button
+              type="button"
+              // TODO: integrate document delivery (e.g. email gated PDF / file host)
+              disabled
+              aria-disabled="true"
+              title="Sponsorship packet not yet available in this prototype"
+              className="inline-flex cursor-not-allowed items-center gap-2 rounded-md bg-white px-6 py-3 text-sm font-semibold text-navy ring-1 ring-inset ring-navy/15"
+            >
+              <FileText size={16} /> Download sponsorship packet (coming soon)
+            </button>
           </div>
         </div>
       </section>

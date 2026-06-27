@@ -5,6 +5,7 @@ import { SectionHeading } from "@/components/SectionHeading";
 import { EventCard } from "@/components/EventCard";
 import { HonoreeCard } from "@/components/HonoreeCard";
 import { SponsorLogoGrid } from "@/components/SponsorLogoGrid";
+import { StatBand } from "@/components/StatBand";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { PlaceholderImage } from "@/components/PlaceholderImage";
 import { Badge } from "@/components/Badge";
@@ -39,8 +40,15 @@ export default function HomePage() {
         ]}
       />
 
+      {/* Credibility stat band (all figures confirmed) */}
+      <section className="bg-offWhite py-12">
+        <div className="container-content">
+          <StatBand />
+        </div>
+      </section>
+
       {/* Mission pillars */}
-      <section className="bg-offWhite py-20">
+      <section className="bg-offWhite pb-20 pt-8">
         <div className="container-content">
           <SectionHeading
             eyebrow="Our Mission"

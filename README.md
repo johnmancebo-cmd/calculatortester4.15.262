@@ -102,6 +102,7 @@ All dynamic features are **front-end stubs** that show a success state and stop 
 | Sponsor inquiry | `components/SponsorInquiryForm.tsx` | `// TODO: integrate sponsorship CRM / email service` | HubSpot / route handler |
 | Ticket purchase | `app/awards-dinner/page.tsx` (Tickets section) | `// TODO: integrate ticketing/payment service` | Stripe / Eventbrite |
 | Venue map | `app/awards-dinner/page.tsx` (Venue section) | `// TODO: integrate interactive map` | Google Maps / Mapbox |
+| Sponsorship packet | `app/awards-dinner/page.tsx` (Sponsorship section) | `// TODO: integrate document delivery` | Email-gated PDF / file host |
 
 The "Member login" / portal concept from the brief is intentionally **not** stood up as real auth; the join/network CTAs route to the stubbed contact flow.
 

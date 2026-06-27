@@ -5,6 +5,7 @@ import { SectionHeading } from "@/components/SectionHeading";
 import { SponsorTierCard } from "@/components/SponsorTierCard";
 import { SponsorLogoGrid } from "@/components/SponsorLogoGrid";
 import { SponsorInquiryForm } from "@/components/SponsorInquiryForm";
+import { StatBand } from "@/components/StatBand";
 import { sponsors, sponsorshipTiers, whySponsor } from "@/data/sponsors";
 import { site } from "@/data/site";
 
@@ -33,7 +34,11 @@ export default function SponsorsPage() {
           { label: "Explore packages", href: "#packages", variant: "primary" },
           { label: "Start an inquiry", href: "#inquiry", variant: "secondary" },
         ]}
-      />
+      >
+        <div className="mt-10">
+          <StatBand tone="dark" />
+        </div>
+      </Hero>
 
       {/* Why sponsor */}
       <section className="bg-offWhite py-20">
@@ -96,6 +101,48 @@ export default function SponsorsPage() {
           <div className="mt-12">
             <SponsorLogoGrid sponsors={sponsors} />
           </div>
+        </div>
+      </section>
+
+      {/* How it works */}
+      <section className="bg-navy py-20 text-offWhite">
+        <div className="container-content">
+          <SectionHeading
+            eyebrow="Simple Process"
+            title="How sponsorship works"
+            tone="light"
+            intro="No pricing is published online — we tailor recognition to your goals. Getting started takes one short conversation."
+          />
+          <ol className="mt-12 grid gap-6 md:grid-cols-3">
+            {[
+              {
+                step: "1",
+                title: "Tell us your goals",
+                body: "Share your interest and what matters to your organization using the inquiry form below.",
+              },
+              {
+                step: "2",
+                title: "Review your package",
+                body: "We follow up with current levels, benefits, and pricing tailored to your visibility goals.",
+              },
+              {
+                step: "3",
+                title: "Make an impact",
+                body: "Activate your partnership across the Awards Dinner, events, and year-round recognition.",
+              },
+            ].map((s) => (
+              <li
+                key={s.step}
+                className="rounded-xl bg-offWhite/5 p-6 ring-1 ring-inset ring-offWhite/15"
+              >
+                <span className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-gold font-display text-lg font-semibold text-navy">
+                  {s.step}
+                </span>
+                <h3 className="mt-5 text-lg font-semibold text-offWhite">{s.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-offWhite/75">{s.body}</p>
+              </li>
+            ))}
+          </ol>
         </div>
       </section>
 
