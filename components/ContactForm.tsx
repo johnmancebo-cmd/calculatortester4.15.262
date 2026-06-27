@@ -48,13 +48,13 @@ export function ContactForm() {
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
           <label htmlFor="c-name" className={labelClass}>
-            Name <span className="text-gold">*</span>
+            Name <span className="text-goldText">*</span>
           </label>
           <input id="c-name" name="name" required className={`mt-1.5 ${inputClass}`} />
         </div>
         <div>
           <label htmlFor="c-email" className={labelClass}>
-            Email <span className="text-gold">*</span>
+            Email <span className="text-goldText">*</span>
           </label>
           <input
             id="c-email"
@@ -74,7 +74,7 @@ export function ContactForm() {
         </div>
         <div>
           <label htmlFor="c-category" className={labelClass}>
-            Inquiry type <span className="text-gold">*</span>
+            Inquiry type <span className="text-goldText">*</span>
           </label>
           <select
             id="c-category"
@@ -96,7 +96,7 @@ export function ContactForm() {
       </div>
       <div>
         <label htmlFor="c-message" className={labelClass}>
-          Message <span className="text-gold">*</span>
+          Message <span className="text-goldText">*</span>
         </label>
         <textarea
           id="c-message"
@@ -112,7 +112,7 @@ export function ContactForm() {
       >
         Send message
       </button>
-      <p className="text-xs text-charcoal/55">
+      <p className="text-xs text-charcoal/70">
         Demo form — submissions are not sent or stored.
       </p>
     </form>

@@ -12,14 +12,15 @@ export function Wordmark({
 }) {
   const ink = variant === "light" ? "#F8F6F0" : "#071A2F";
   const gold = "#C9A227";
+  // Tagline sits on a light bg in the "dark" variant — use the accessible gold there.
+  const taglineColor = variant === "light" ? gold : "#7A5E0C";
   return (
     <span className={`inline-flex items-center gap-2.5 ${className}`}>
       <svg
         width="34"
         height="34"
         viewBox="0 0 34 34"
-        role="img"
-        aria-label="The Water Street Club emblem"
+        aria-hidden="true"
         className="shrink-0"
       >
         <circle cx="17" cy="17" r="16" fill="none" stroke={gold} strokeWidth="1.5" />
@@ -53,7 +54,7 @@ export function Wordmark({
         </span>
         <span
           className="mt-0.5 text-[9px] font-sans uppercase tracking-[0.22em]"
-          style={{ color: gold }}
+          style={{ color: taglineColor }}
         >
           Diversity &amp; Inclusion in Insurance
         </span>

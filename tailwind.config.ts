@@ -17,6 +17,9 @@ const config: Config = {
         navy: "#071A2F",
         deepBlue: "#0B2341",
         gold: "#C9A227",
+        // Accessible gold for TEXT on light backgrounds (gold #C9A227 fails AA on
+        // white/offWhite). Use text-goldText on light; keep gold/softGold on dark.
+        goldText: "#7A5E0C",
         softGold: "#E6D28A",
         offWhite: "#F8F6F0",
         charcoal: "#1F2933",

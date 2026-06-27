@@ -51,7 +51,7 @@ export default function ContactPage() {
                 <div>
                   <p className="text-sm font-semibold text-navy">Location</p>
                   <p className="text-charcoal/75">{site.city}</p>
-                  <p className="mt-1 text-sm text-charcoal/55">
+                  <p className="mt-1 text-sm text-charcoal/70">
                     {site.mailingAddress}
                   </p>
                 </div>
@@ -62,11 +62,11 @@ export default function ContactPage() {
                 </span>
                 <div>
                   <p className="text-sm font-semibold text-navy">LinkedIn</p>
-                  <p className="text-charcoal/55">{site.linkedin}</p>
+                  <p className="text-charcoal/70">{site.linkedin}</p>
                 </div>
               </li>
             </ul>
-            <p className="mt-8 text-xs leading-relaxed text-charcoal/55">
+            <p className="mt-8 text-xs leading-relaxed text-charcoal/70">
               {site.name} is a {site.status} based in {site.city} and files{" "}
               {site.irsForm}. Donations are tax-deductible to the extent allowed
               by law.
@@ -76,7 +76,7 @@ export default function ContactPage() {
           {/* Form */}
           <div className="rounded-2xl bg-white p-6 shadow-card ring-1 ring-navy/5 sm:p-8">
             <h2 className="text-lg font-semibold text-navy">Send us a message</h2>
-            <p className="mt-1 text-sm text-charcoal/60">
+            <p className="mt-1 text-sm text-charcoal/70">
               Choose a topic and we&apos;ll route your message to the right team.
             </p>
             <div className="mt-6">

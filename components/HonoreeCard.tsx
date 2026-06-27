@@ -10,7 +10,7 @@ export function HonoreeCard({ honoree }: { honoree: Honoree }) {
       </div>
       <div className="flex flex-1 flex-col p-5">
         <div className="mb-2 flex flex-wrap items-center gap-2">
-          <span className="text-xs font-semibold uppercase tracking-wider text-gold">
+          <span className="text-xs font-semibold uppercase tracking-wider text-goldText">
             {honoree.award}
           </span>
           <Badge tone={honoree.confirmed ? "confirmed" : "placeholder"} />
@@ -23,7 +23,7 @@ export function HonoreeCard({ honoree }: { honoree: Honoree }) {
         <p className="mt-3 flex-1 text-sm leading-relaxed text-charcoal/70">
           {honoree.bio}
         </p>
-        <p className="mt-4 text-xs font-medium uppercase tracking-wide text-charcoal/45">
+        <p className="mt-4 text-xs font-medium uppercase tracking-wide text-charcoal/70">
           {honoree.year}
         </p>
       </div>

@@ -47,7 +47,7 @@ export function EventsBrowser({
         })}
       </div>
 
-      <p className="mt-4 text-sm text-charcoal/55" aria-live="polite">
+      <p className="mt-4 text-sm text-charcoal/70" aria-live="polite">
         Showing {filtered.length} {filtered.length === 1 ? "event" : "events"}
         {active !== "All" ? ` in ${active}` : ""}.
       </p>
@@ -59,7 +59,7 @@ export function EventsBrowser({
           ))}
         </div>
       ) : (
-        <p className="mt-10 rounded-xl bg-white p-8 text-center text-charcoal/60 ring-1 ring-navy/5">
+        <p className="mt-10 rounded-xl bg-white p-8 text-center text-charcoal/70 ring-1 ring-navy/5">
           No events in this category yet.
         </p>
       )}

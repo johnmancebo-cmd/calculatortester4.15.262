@@ -75,5 +75,7 @@ A small `Badge` component renders three states — `confirmed`, `sample`, `place
 ## 7. Accessibility & performance posture
 
 - WCAG 2.1 AA targets: semantic landmarks (`header`/`main`/`footer`/`nav`), skip link, visible focus, labeled fields, `aria-current`, `aria-pressed` on filters, `aria-live` on filter results, alt text on generated imagery, and contrast-conscious token pairings (navy/offWhite, gold-on-navy).
+- **Verified with Lighthouse** (production build, headless Chromium) across Home, Awards Dinner, Sponsors, Honorees, and Contact: **Performance 98 · Accessibility 100 · Best Practices 100 · SEO 100**.
+- **`goldText` (#7A5E0C) token:** brand gold `#C9A227` fails AA as small text on light backgrounds, so a darker accessible gold is used for gold *text* on white/offWhite (eyebrows, labels, stat figures), while `gold`/`softGold` remain for accents, CTA fills, and text on dark surfaces. Muted caption text sits at `charcoal/70`+ to clear 4.5:1.
 - Static generation + `next/font` self-hosting + lightweight SVG imagery keep payloads small (first-load JS ~105–112 kB shared). No client JS on purely static pages beyond the header and the few interactive islands (forms, events filter).
 - `prefers-reduced-motion` disables smooth scroll and transitions.

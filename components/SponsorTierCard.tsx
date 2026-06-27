@@ -51,7 +51,7 @@ export function SponsorTierCard({ tier }: { tier: SponsorshipTier }) {
       </ul>
       <p
         className={`mt-5 text-xs ${
-          tier.featured ? "text-offWhite/55" : "text-charcoal/50"
+          tier.featured ? "text-offWhite/70" : "text-charcoal/70"
         }`}
       >
         Pricing available on request — no amounts are published.

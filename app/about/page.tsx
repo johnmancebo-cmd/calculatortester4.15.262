@@ -60,7 +60,7 @@ export default function AboutPage() {
                 mentorship, and relationships that help diverse talent thrive.
               </p>
             </div>
-            <p className="mt-5 text-xs leading-relaxed text-charcoal/55">
+            <p className="mt-5 text-xs leading-relaxed text-charcoal/70">
               As a {site.status}, the Club files {site.irsForm}; donations are
               tax-deductible to the extent allowed by law.
             </p>

@@ -14,8 +14,8 @@ export function BoardMemberCard({ member }: { member: BoardMember }) {
         </div>
         <h3 className="text-lg font-semibold text-navy">{member.name}</h3>
         <p className="mt-1 text-sm text-charcoal/70">{member.title}</p>
-        <p className="text-sm text-charcoal/55">{member.company}</p>
-        <p className="mt-2 text-xs font-medium uppercase tracking-wide text-gold">
+        <p className="text-sm text-charcoal/70">{member.company}</p>
+        <p className="mt-2 text-xs font-medium uppercase tracking-wide text-goldText">
           {member.wscRole}
         </p>
       </div>

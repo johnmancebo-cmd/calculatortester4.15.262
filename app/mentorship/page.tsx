@@ -142,13 +142,13 @@ export default function MentorshipPage() {
                 className="rounded-xl bg-white p-5 shadow-card ring-1 ring-navy/5"
               >
                 <div className="flex items-center gap-2">
-                  <span className="text-xs font-semibold uppercase tracking-wide text-gold">
+                  <span className="text-xs font-semibold uppercase tracking-wide text-goldText">
                     {o.type}
                   </span>
                   <Badge tone="placeholder" />
                 </div>
                 <h3 className="mt-2 font-semibold text-navy">{o.title}</h3>
-                <p className="text-sm text-charcoal/60">{o.org}</p>
+                <p className="text-sm text-charcoal/70">{o.org}</p>
               </div>
             ))}
           </div>

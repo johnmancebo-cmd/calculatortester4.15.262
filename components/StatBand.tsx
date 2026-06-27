@@ -23,23 +23,23 @@ export function StatBand({ tone = "light" }: { tone?: "light" | "dark" }) {
       {stats.map((s) => (
         <div
           key={s.label}
-          className={`flex flex-col gap-1 p-6 text-center ${dark ? "bg-navy" : "bg-white"}`}
+          className={`flex flex-col-reverse gap-1 p-6 text-center ${dark ? "bg-navy" : "bg-white"}`}
         >
-          <dt className="sr-only">{s.label}</dt>
-          <dd
-            className={`font-display text-3xl font-semibold sm:text-4xl ${
-              dark ? "text-softGold" : "text-gold"
-            }`}
-          >
-            {s.value}
-          </dd>
-          <p
+          {/* DOM order dt→dd (read "label, value"); visual order reversed so value sits on top */}
+          <dt
             className={`text-xs leading-relaxed ${
               dark ? "text-offWhite/70" : "text-charcoal/65"
             }`}
           >
             {s.label}
-          </p>
+          </dt>
+          <dd
+            className={`font-display text-3xl font-semibold sm:text-4xl ${
+              dark ? "text-softGold" : "text-goldText"
+            }`}
+          >
+            {s.value}
+          </dd>
         </div>
       ))}
     </dl>

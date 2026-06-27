@@ -30,7 +30,7 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-navy/10 bg-offWhite/95 backdrop-blur supports-[backdrop-filter]:bg-offWhite/80">
       <div className="container-content flex h-16 items-center justify-between gap-4">
-        <Link href="/" aria-label="The Water Street Club — home" className="py-2">
+        <Link href="/" className="py-2">
           <Wordmark variant="dark" />
         </Link>
 
@@ -41,8 +41,8 @@ export function SiteHeader() {
                 <Link
                   href={item.href}
                   aria-current={isActive(item.href) ? "page" : undefined}
-                  className={`rounded px-3 py-2 text-sm font-medium transition-colors hover:text-gold ${
-                    isActive(item.href) ? "text-gold" : "text-charcoal"
+                  className={`rounded px-3 py-2 text-sm font-medium transition-colors hover:text-goldText ${
+                    isActive(item.href) ? "text-goldText" : "text-charcoal"
                   }`}
                 >
                   {item.label}
@@ -87,7 +87,7 @@ export function SiteHeader() {
                     aria-current={isActive(item.href) ? "page" : undefined}
                     className={`block rounded-md px-3 py-3 text-base font-medium ${
                       isActive(item.href)
-                        ? "bg-navy/5 text-gold"
+                        ? "bg-navy/5 text-goldText"
                         : "text-charcoal hover:bg-navy/5"
                     }`}
                   >

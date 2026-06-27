@@ -87,13 +87,13 @@ export default function HonoreesPage() {
                       </div>
                       <div className="min-w-0">
                         <div className="flex flex-wrap items-center gap-1.5">
-                          <p className="text-xs font-semibold uppercase tracking-wide text-gold">
+                          <p className="text-xs font-semibold uppercase tracking-wide text-goldText">
                             {r.award}
                           </p>
                           <Badge tone="placeholder" />
                         </div>
                         <p className="mt-0.5 font-medium text-navy">{r.name}</p>
-                        <p className="text-sm text-charcoal/60">{r.company}</p>
+                        <p className="text-sm text-charcoal/70">{r.company}</p>
                       </div>
                     </div>
                   ))}

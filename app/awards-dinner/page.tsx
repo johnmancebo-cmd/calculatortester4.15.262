@@ -141,7 +141,7 @@ export default function AwardsDinnerPage() {
                   <Icon size={22} />
                 </span>
                 <div className="mt-4 flex items-center gap-2">
-                  <p className="text-xs font-semibold uppercase tracking-wider text-charcoal/55">
+                  <p className="text-xs font-semibold uppercase tracking-wider text-charcoal/70">
                     {label}
                   </p>
                   {sample ? <Badge tone="sample" /> : <Badge tone="confirmed" />}
@@ -385,7 +385,7 @@ export default function AwardsDinnerPage() {
               <Badge tone="confirmed">Venue confirmed</Badge>
               <Badge tone="sample">Date for next edition — confirm</Badge>
             </div>
-            <p className="mt-5 text-sm text-charcoal/60">
+            <p className="mt-5 text-sm text-charcoal/70">
               {/* TODO: integrate interactive map (e.g. Google Maps / Mapbox embed) */}
               Interactive map to be embedded at launch.
             </p>
@@ -446,7 +446,7 @@ export default function AwardsDinnerPage() {
                     {faq.q}
                     {faq.sample ? <Badge tone="sample" /> : null}
                   </span>
-                  <span className="text-gold transition-transform group-open:rotate-45">
+                  <span className="text-goldText transition-transform group-open:rotate-45">
                     +
                   </span>
                 </summary>

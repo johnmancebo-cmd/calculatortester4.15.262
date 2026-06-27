@@ -66,13 +66,13 @@ export default function GalleryPage() {
                 className="flex flex-col rounded-xl bg-offWhite p-6 shadow-card ring-1 ring-navy/5"
               >
                 <div className="flex items-center gap-2">
-                  <span className="text-xs font-semibold uppercase tracking-wide text-gold">
+                  <span className="text-xs font-semibold uppercase tracking-wide text-goldText">
                     {post.category}
                   </span>
                   <Badge tone="sample" />
                 </div>
                 <h3 className="mt-2 text-lg font-semibold text-navy">{post.title}</h3>
-                <p className="mt-1 text-xs text-charcoal/55">{post.date}</p>
+                <p className="mt-1 text-xs text-charcoal/70">{post.date}</p>
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-charcoal/70">
                   {post.excerpt}
                 </p>
@@ -98,7 +98,7 @@ export default function GalleryPage() {
                 </span>
                 <div className="min-w-0 flex-1">
                   <p className="font-medium text-navy">{p.title}</p>
-                  <p className="text-sm text-charcoal/55">
+                  <p className="text-sm text-charcoal/70">
                     {p.outlet} · {p.date}
                   </p>
                 </div>

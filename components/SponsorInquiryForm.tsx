@@ -40,13 +40,13 @@ export function SponsorInquiryForm() {
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
           <label htmlFor="s-name" className={labelClass}>
-            Name <span className="text-gold">*</span>
+            Name <span className="text-goldText">*</span>
           </label>
           <input id="s-name" name="name" required className={`mt-1.5 ${inputClass}`} />
         </div>
         <div>
           <label htmlFor="s-company" className={labelClass}>
-            Company <span className="text-gold">*</span>
+            Company <span className="text-goldText">*</span>
           </label>
           <input id="s-company" name="company" required className={`mt-1.5 ${inputClass}`} />
         </div>
@@ -54,7 +54,7 @@ export function SponsorInquiryForm() {
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
           <label htmlFor="s-email" className={labelClass}>
-            Email <span className="text-gold">*</span>
+            Email <span className="text-goldText">*</span>
           </label>
           <input
             id="s-email"
@@ -66,7 +66,7 @@ export function SponsorInquiryForm() {
         </div>
         <div>
           <label htmlFor="s-interest" className={labelClass}>
-            Interest <span className="text-gold">*</span>
+            Interest <span className="text-goldText">*</span>
           </label>
           <select
             id="s-interest"
@@ -104,7 +104,7 @@ export function SponsorInquiryForm() {
       >
         Request sponsorship information
       </button>
-      <p className="text-xs text-charcoal/55">
+      <p className="text-xs text-charcoal/70">
         Demo form — submissions are not sent or stored.
       </p>
     </form>

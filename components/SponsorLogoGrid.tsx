@@ -6,7 +6,7 @@ const TIER_ORDER: SponsorTier[] = ["Platinum", "Gold", "Silver", "Supporting"];
 function LogoTile({ sponsor }: { sponsor: Sponsor }) {
   return (
     <div className="flex aspect-[3/2] items-center justify-center rounded-lg border border-dashed border-navy/20 bg-white p-4 text-center">
-      <span className="text-xs font-medium uppercase tracking-wide text-charcoal/45">
+      <span className="text-xs font-medium uppercase tracking-wide text-charcoal/70">
         {sponsor.name}
       </span>
     </div>
