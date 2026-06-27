@@ -45,7 +45,7 @@ export function Wordmark({
         <rect x="15.5" y="6" width="3" height="11" fill={ink} />
         <rect x="20" y="11" width="3" height="6" fill={ink} />
       </svg>
-      <span className="flex flex-col leading-none">
+      <span className="flex min-w-0 flex-col leading-none">
         <span
           className="font-display text-[15px] font-semibold tracking-wide"
           style={{ color: ink }}
@@ -53,7 +53,7 @@ export function Wordmark({
           The Water Street Club
         </span>
         <span
-          className="mt-0.5 text-[9px] font-sans uppercase tracking-[0.22em]"
+          className="mt-0.5 hidden text-[9px] font-sans uppercase tracking-[0.18em] sm:block"
           style={{ color: taglineColor }}
         >
           Diversity &amp; Inclusion in Insurance

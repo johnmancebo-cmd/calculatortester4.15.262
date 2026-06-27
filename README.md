@@ -126,7 +126,8 @@ Routes: `/` · `/about` · `/awards-dinner` · `/honorees` · `/events` · `/spo
 
 - Semantic landmarks, skip link, keyboard navigation, visible gold focus rings, labeled form fields, alt text on generated imagery, `prefers-reduced-motion` support.
 - Responsive from 320px to large desktop with no horizontal scroll.
-- Per-route metadata + Open Graph tags, `sitemap.xml`, `robots.txt`.
+- Per-route metadata + Open Graph tags, a generated branded social share image (`app/opengraph-image.tsx`, reused for Twitter), `sitemap.xml`, `robots.txt`.
+- Responsive verified at 320px (no horizontal overflow) through large desktop.
 - Verified with Lighthouse against the production build (headless Chromium) across Home, Awards Dinner, Sponsors, Honorees, and Contact: **Performance 98 · Accessibility 100 · Best Practices 100 · SEO 100**. (Reproduce with `npm run build && npm run start`, then run Lighthouse.)
 
 See **`DESIGN-NOTES.md`** for information-architecture decisions and assumptions, and **`CONTENT-TODO.md`** for the full list of items the client must supply or confirm.

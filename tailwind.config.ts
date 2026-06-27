@@ -31,9 +31,9 @@ const config: Config = {
         sans: ["var(--font-sans)", "system-ui", "sans-serif"],
       },
       fontSize: {
-        "display-xl": ["clamp(2.75rem, 6vw, 4.5rem)", { lineHeight: "1.05", letterSpacing: "-0.01em" }],
-        "display-lg": ["clamp(2.25rem, 4.5vw, 3.5rem)", { lineHeight: "1.1", letterSpacing: "-0.01em" }],
-        "display-md": ["clamp(1.75rem, 3vw, 2.5rem)", { lineHeight: "1.15" }],
+        "display-xl": ["clamp(2rem, 7vw, 4.5rem)", { lineHeight: "1.08", letterSpacing: "-0.01em" }],
+        "display-lg": ["clamp(1.85rem, 5.5vw, 3.5rem)", { lineHeight: "1.12", letterSpacing: "-0.01em" }],
+        "display-md": ["clamp(1.6rem, 3.5vw, 2.5rem)", { lineHeight: "1.15" }],
       },
       maxWidth: {
         content: "1200px",
