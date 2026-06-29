@@ -73,7 +73,9 @@ const placeholderRecipient = (year: number, award: string): Honoree => ({
   featured: false,
 });
 
-export const honoreeArchive: HonoreeYearGroup[] = [2024, 2023, 2022, 2019, 2018].map(
+// 2025 dinner confirmed (Nov 6, 2025); recipient names remain placeholders —
+// no honoree names were verifiable from public sources (see CONTENT-TODO.md).
+export const honoreeArchive: HonoreeYearGroup[] = [2025, 2024, 2023, 2022, 2019, 2018].map(
   (year) => ({
     year,
     yearConfirmed: true,

@@ -6,10 +6,28 @@ Legend: 🔵 `[PLACEHOLDER]` = supply real content · 🟡 `[SAMPLE — confirm]
 
 ---
 
+## ✅ Applied from web research (please confirm accuracy)
+
+The live site could not be fetched directly (network policy), so the items below were sourced via public web search, cross-checked across multiple sources, and adversarially verified. They have been wired into the data files. **Please confirm they're accurate.**
+
+- **Board titles / companies / roles** (`data/board.ts`) — all 7 leaders' employers + day-job titles applied; officer roles applied for Mancebo (Chairman & Founding Member), West (Co-Founder & Board Member), Hudson (Treasurer & Co-Founder), Smith (Secretary), Campbell (Board Member).
+  - ⚠️ **Andrew Deshong** and **Peggy Menard** WSC roles default to "Board Member" but were **not** independently corroborated (`roleConfirmed: false`, shown with a "Role — confirm" badge). Confirm their exact WSC roles.
+- **LinkedIn** (`data/site.ts`) — `https://www.linkedin.com/in/thewaterstreetclub/`.
+- **2024 Awards Dinner** — confirmed **Thursday, Nov 7, 2024**, The View at Battery Park (Eventbrite).
+- **2025 Awards Dinner** — confirmed date **Thursday, Nov 6, 2025** (venue still to confirm); added to events + honoree archive.
+- **EIN 82-3734370** (for reference; not surfaced in UI).
+
+**Still unresolved from research:**
+- 🟡 **Mailing address conflict** — site shows Aon, 199 Water St, NY 10038; IRS records list Sleepy Hollow, NY. `site.mailingAddress` left as placeholder until you confirm the authoritative address.
+- 🟡 **2025 honoree** — a lead surfaced (Japhet Boutin, SVP & Head of Technical Claims, Zurich North America, for the Insurance Executive Diversity Trailblazer) but could **not** be verified from a quotable source. **Not published.** Confirm before adding.
+- 🔵 Founding year, vision statement, sponsor names, and honoree names (all years) — not found via research; still needed from you.
+
+---
+
 ## Global
 
 - 🔵 Production domain — currently `https://www.thewaterstreetclub.org` placeholder in `data/site.ts` (`site.url`); used for canonical/OG/sitemap. Confirm the real domain.
-- 🔵 LinkedIn URL (`site.linkedin`) and mailing address (`site.mailingAddress`).
+- ✅ LinkedIn URL — applied from research (`site.linkedin`). 🔵 Mailing address (`site.mailingAddress`) still needed — see address conflict above.
 - 🟡 SVG wordmark — original placeholder mark; confirm whether to keep or replace with the Club's real logo (supply asset if so).
 - 🔵 Real photography to replace all generated placeholder imagery and avatars.
 
@@ -31,7 +49,7 @@ Legend: 🔵 `[PLACEHOLDER]` = supply real content · 🟡 `[SAMPLE — confirm]
 - 🟡 Mission statement paragraph — sample phrasing grounded in the four confirmed pillars; confirm wording.
 - 🟡 Vision statement — sample; the Club has no confirmed vision statement yet. Supply or approve.
 - 🟡 John Street Club description — partnership is confirmed; the descriptive copy is sample. Confirm details (what they co-host, cadence).
-- 🔵 **Leadership grid** — names are confirmed (John Mancebo, Ayesha West, Kirk Hudson, Peggy Menard, Denise Campbell, Tevin Smith, Andrew Deshong). Supply for each: **title**, **company**, **WSC role**, and **headshot**.
+- ✅ **Leadership grid** — names confirmed; titles/companies/roles applied from research (see "Applied from web research" above). 🟡 Confirm Andrew Deshong & Peggy Menard exact WSC roles. 🔵 Supply real **headshots** for all 7.
 
 ## Annual Awards Dinner (`/awards-dinner`)
 
@@ -88,7 +106,8 @@ Event **titles and years are confirmed**; every **date** is a sample, and venues
 
 | # | Event (confirmed title) | Date | Venue |
 | --- | --- | --- | --- |
-| 1 | 2024 Insurance Industry Awards Dinner | 🟡 confirm date | ✅ The View at Battery Park |
+| 0 | 2025 Insurance Industry Awards Dinner | ✅ Nov 6, 2025 (Eventbrite) | 🟡 confirm venue |
+| 1 | 2024 Insurance Industry Awards Dinner | ✅ Nov 7, 2024 (Eventbrite) | ✅ The View at Battery Park |
 | 2 | 2023 Insurance Industry Awards Dinner | 🟡 confirm date | ✅ The View at Battery Park |
 | 3 | 2022 Insurance Industry Awards Dinner | 🟡 confirm date | ✅ The View at Battery Park |
 | 4 | 2019 Insurance Industry Awards Dinner | 🟡 confirm date | 🔵 confirm venue |
