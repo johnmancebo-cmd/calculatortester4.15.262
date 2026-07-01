@@ -26,7 +26,7 @@ The live site could not be fetched directly (network policy), so the items below
 
 ## Global
 
-- 🔵 Production domain — currently `https://www.thewaterstreetclub.org` placeholder in `data/site.ts` (`site.url`); used for canonical/OG/sitemap. Confirm the real domain.
+- ✅ Production domain — set to the Club's confirmed current domain `https://www.thewaterstreetclub.com` (`data/site.ts` → `site.url`). 🟡 Confirm the new site will deploy to this same domain before launch (it drives canonical/OG/sitemap URLs).
 - ✅ LinkedIn URL — applied from research (`site.linkedin`). 🔵 Mailing address (`site.mailingAddress`) still needed — see address conflict above.
 - 🟡 SVG wordmark — original placeholder mark; confirm whether to keep or replace with the Club's real logo (supply asset if so).
 - 🔵 Real photography to replace all generated placeholder imagery and avatars.
