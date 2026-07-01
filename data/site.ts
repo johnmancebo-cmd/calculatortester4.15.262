@@ -11,11 +11,13 @@ export const site = {
   reachPerYear: 400,
   status: "501(c)(3) nonprofit",
   irsForm: "IRS Form 990-EZ",
+  // CONFIRMED (verified via web research)
+  linkedin: "https://www.linkedin.com/in/thewaterstreetclub/",
   // Placeholders
-  linkedin: "[PLACEHOLDER: LinkedIn URL]",
   mailingAddress: "[PLACEHOLDER: mailing address], New York, NY",
-  // SEO
-  url: "https://www.thewaterstreetclub.org", // [PLACEHOLDER: production domain]
+  // SEO — the Club's confirmed current domain; confirm it will also host this
+  // new site before launch (drives canonical/OG/sitemap URLs).
+  url: "https://www.thewaterstreetclub.com",
   description:
     "The Water Street Club is a 501(c)(3) nonprofit advancing diversity and inclusion in the insurance industry through leadership, networking, mentorship, and its signature annual awards dinner.",
 } as const;

@@ -73,15 +73,29 @@ export const upcomingEvents: WSCEvent[] = [
 /* ---------------- PAST (titles/years CONFIRMED; dates [SAMPLE]) ---------------- */
 export const pastEvents: WSCEvent[] = [
   {
+    // Date CONFIRMED via Eventbrite (Nov 6, 2025); venue [SAMPLE — confirm]
+    title: "2025 Insurance Industry Awards Dinner",
+    date: "November 6, 2025",
+    location: "[SAMPLE — confirm] New York, NY",
+    category: "Awards Dinner",
+    description:
+      "The 2025 edition of the Club's signature awards dinner, where the Insurance Executive Diversity Trailblazer award was presented.",
+    image: "",
+    slug: "awards-dinner-2025",
+    dateConfirmed: true,
+    upcoming: false,
+  },
+  {
+    // Date + venue CONFIRMED via Eventbrite (Thu Nov 7, 2024, The View at Battery Park)
     title: "2024 Insurance Industry Awards Dinner",
-    date: "[SAMPLE — confirm] 2024",
+    date: "November 7, 2024",
     location: "The View at Battery Park, 1 Battery Place, New York, NY 10004",
     category: "Awards Dinner",
     description:
       "The 2024 edition of the Club's signature awards dinner honoring leaders advancing diversity and inclusion in insurance.",
     image: "",
     slug: "awards-dinner-2024",
-    dateConfirmed: false,
+    dateConfirmed: true,
     upcoming: false,
   },
   {
